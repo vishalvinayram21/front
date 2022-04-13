@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:phone/screens/login_screen.dart';
 import 'package:phone/screens/signin_screen.dart';
 
 class Welcome extends StatelessWidget {
@@ -16,7 +15,7 @@ class Welcome extends StatelessWidget {
         width: size.width,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/welcome.png'),
+                image: AssetImage('assets/images/welcome_home.png'),
                 fit: BoxFit.fitWidth)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

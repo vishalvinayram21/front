@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:phone/screens/login_screen.dart';
 import 'package:phone/screens/signin_screen.dart';
-import 'package:phone/screens/test.dart';
-import 'package:phone/screens/testing.dart';
 import 'package:phone/screens/welcome_screen.dart';
 
 void main() {
