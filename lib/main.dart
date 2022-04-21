@@ -26,8 +26,7 @@ class MyApp extends StatelessWidget {
       builder: (context, snapshot) {
         // Check for errors
         if (snapshot.hasError) {
-          return const Center(
-            child: Text('Could not load app'),
+          return const  Text("Unable connect ",maxLines: 2,softWrap: true,
           );
         }
 
@@ -54,7 +53,8 @@ class MyApp extends StatelessWidget {
               children: <Widget>[
                 CircularProgressIndicator(
                   backgroundColor: Theme.of(context).primaryColor,
-                )
+                ),
+                Text("HELLO WORLD")
               ],
             )
           ],

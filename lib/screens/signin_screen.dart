@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -112,7 +114,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           alignment: Alignment.center,
                           children: [
                             Positioned(
-                              top: 100,
+                              top: 70,
                               child: Container(
                                 height: 300,
                                 width: 300,
@@ -125,9 +127,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             ),
                             Positioned(
                               bottom: 0,
+                              top: 100,
                               child: SvgPicture.asset(
                                 'assets/images/logo2.svg',
-                                width: 160,
+                                width: 89,
+                                height: 100,
                               ),
                               // Image.asset(
                               //   'assets/images/Icon.png',
@@ -138,6 +142,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ),
                       ),
                       Container(
+
                         decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
@@ -150,7 +155,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           children: [
                             SizedBox(height: 20),
                             const Padding(
-                              padding: EdgeInsets.only(left: 15),
+                              padding: EdgeInsets.fromLTRB(20, 17, 0, 0),
                               child: Text(
                                 'Enter your',
                                 style: TextStyle(
@@ -158,7 +163,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ),
                             ),
                             const Padding(
-                              padding: EdgeInsets.only(left: 15),
+                              padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                               child: Text(
                                 'Mobile Number',
                                 style: TextStyle(
@@ -196,17 +201,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                         fontSize: 25.0)),
                               ],
                             ),
-                            NumericKeyboard(
-                              onKeyboardTap: _onKeyboardTap,
-                              textColor: Colors.black,
-                              rightButtonFn: () {
-                                setState(() {
-                                  text = text.substring(0, text.length - 1);
-                                });
-                              },
-                              rightIcon: Icon(
-                                Icons.backspace,
-                                color: Theme.of(context).primaryColor,
+                            Container(
+                              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                              child: NumericKeyboard(
+                                onKeyboardTap: _onKeyboardTap,
+                                textColor: Colors.black,
+                                rightButtonFn: () {
+                                  setState(() {
+                                    text = text.substring(0, text.length - 1);
+                                  });
+                                },
+                                rightIcon: Icon(
+                                  Icons.backspace,
+                                  color: Theme.of(context).primaryColor,
+                                ),
                               ),
                             ),
                             Align(
