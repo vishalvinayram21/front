@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Container(
                   padding: EdgeInsets.all(10),
                   width: 252,
-                  height: 36,
+                  height: 40,
                   child: DropdownButton<String>(
                     isExpanded: true,
                     underline: SizedBox(),

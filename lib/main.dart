@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:phone/screens/signin_screen.dart';
 import 'package:phone/screens/welcome_screen.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
 
         // Otherwise, show something whilst waiting for initialization to complete
         return Column(
+          textDirection: TextDirection.ltr,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Row(
@@ -54,7 +56,6 @@ class MyApp extends StatelessWidget {
                 CircularProgressIndicator(
                   backgroundColor: Theme.of(context).primaryColor,
                 ),
-                Text("HELLO WORLD")
               ],
             )
           ],

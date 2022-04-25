@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:phone/screens/signin_screen.dart';
 
+
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
 
@@ -50,7 +51,6 @@ class Welcome extends StatelessWidget {
                       'All your health data at your fingertips.',
                       style: TextStyle(color: Colors.white, fontSize: 16.0),
                     ),
-
                   ],
 
                 ),
@@ -58,7 +58,10 @@ class Welcome extends StatelessWidget {
               Container(
                 decoration: const BoxDecoration(
                     color: Color.fromRGBO(148, 157, 255, 1),
-                  borderRadius: BorderRadius.only(topRight: Radius.circular(500),topLeft: Radius.circular(500))
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(500),topLeft: Radius.circular(500),
+
+                  ),
+
                 ),
                 child: Column(
                   children: [
@@ -68,14 +71,15 @@ class Welcome extends StatelessWidget {
                     height: size.height/2,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                        color: Color.fromRGBO(140, 157, 255, 1),
+                        color: Color.fromRGBO(144, 161, 253, 1),
 
                 ),
                     child: Column(
                       children: [
+
                         Container(
                           width: MediaQuery.of(context).size.width,
-                          height: size.height / 3,
+                          height: size.height / 3.3,
                           decoration: BoxDecoration(
                               color: Color.fromRGBO(158, 166, 255, 1),
                             borderRadius: BorderRadius.vertical(top: Radius.elliptical(1800,1800),
@@ -85,16 +89,16 @@ class Welcome extends StatelessWidget {
                                 radius: 1,
                                 focalRadius: 200,
                                 stops: [
-                                 0.74,
-                                  0.74,
-                                  .75,
+                                 0.60,
+                                  0.65,
+                                  .70,
                                   .85
                                 ],
                                 colors: [
                                   Color.fromRGBO(158, 166, 255, 1),
                                   Color.fromRGBO(153, 161, 253, 1),
-                                  Color.fromRGBO(154, 163, 255, 1),
-                                  Color.fromRGBO(144, 150, 255, 1),
+                                  Color.fromRGBO(154, 155, 255, 1),
+                                  Color.fromRGBO(140, 150, 255, 1),
                                 ],
                               )
 
@@ -127,6 +131,25 @@ class Welcome extends StatelessWidget {
                                 //   'assets/images/Icon.png',
                                 //   width: 180,
                                 // ),
+                              ),
+                              Positioned(
+                                top:0,
+                                  right:300,
+                                  child:Icon(
+                                    Icons.cloud,
+                                    color: Color.fromRGBO(144, 153, 255, 1),
+
+                                    //color:Colors.white,
+                                    size: 50,
+                                  )
+                              ),
+                                Positioned(
+                                  left:280,
+                                   child:Icon(
+                                     Icons.cloud,
+                                     color: Color.fromRGBO(158, 168, 255, 1),
+                                     size: 100,
+                                   )
                               ),
                             ],
                           ),
@@ -161,6 +184,7 @@ class Welcome extends StatelessWidget {
                              ),
                            ),
                          ),
+
                       ],
                     ),
                   ),
