@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:phone/widgets/Counter.dart';
-
+import '../widgets/Graph.dart';
 import '../widgets/user_container.dart';
 
 Widget TabHome() {
@@ -67,7 +67,6 @@ Widget TabHome() {
                 child: Text("Activites",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
             ),
             Counters(),
-            Graphical(),
           ],
         ),
       ),
@@ -107,7 +106,7 @@ class Graphical extends StatelessWidget {
           ),
           Container(
             child: Text("78 rpm",style: TextStyle(color: Colors.blueAccent,fontWeight: FontWeight.bold),),
-          )
+          ),
         ],
       )
     );
