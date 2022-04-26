@@ -14,8 +14,8 @@ class Counters extends StatelessWidget {
           width: 388,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
+              begin: Alignment.centerRight,
+              end: Alignment.centerLeft,
                 colors: <Color>[
                   Color.fromRGBO(142, 197, 252, 1),
                   Color.fromRGBO(146, 164, 253, 1),

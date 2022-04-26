@@ -44,10 +44,6 @@
         "source": "/home/linuxlite/Desktop/gro_remotcare/android/app/src/main/res/mipmap-xxhdpi/splash.png"
     },
     {
-        "merged": "/home/linuxlite/Desktop/gro_remotcare/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/linuxlite/Desktop/gro_remotcare/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/linuxlite/Desktop/gro_remotcare/build/app/intermediates/res/merged/debug/drawable_clozzer_logo.png.flat",
         "source": "/home/linuxlite/Desktop/gro_remotcare/android/app/src/main/res/drawable/clozzer_logo.png"
     },
