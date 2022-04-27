@@ -90,15 +90,15 @@ class Welcome extends StatelessWidget {
                                 focalRadius: 200,
                                 stops: [
                                  0.60,
-                                  0.65,
-                                  .70,
-                                  .85
+                                  0.70,
+                                  .80,
+                                  .9,
                                 ],
                                 colors: [
-                                  Color.fromRGBO(158, 166, 255, 1),
-                                  Color.fromRGBO(153, 161, 253, 1),
-                                  Color.fromRGBO(154, 155, 255, 1),
-                                  Color.fromRGBO(140, 150, 255, 1),
+                                  Color.fromRGBO(158, 180, 255, 1),
+                                  Color.fromRGBO(153, 167, 253, 1),
+                                  Color.fromRGBO(154, 160, 255, 1),
+                                  Color.fromRGBO(145, 157, 255, 1),
                                 ],
                               )
 

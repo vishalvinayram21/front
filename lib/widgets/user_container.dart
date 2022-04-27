@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:phone/widgets/Parentactivity.dart';
 
 Widget userContainer(
     {required String userIcon, required double width, required double height, required String person}) {
@@ -51,7 +52,8 @@ Widget userContainer(
         ),
         Container(
           margin: EdgeInsets.all(10),
-            child: Text(person,style: TextStyle(fontWeight: FontWeight.bold),))
+            child: Text(person,style: TextStyle(fontWeight: FontWeight.bold),)),
+
       ],
     ),
   );

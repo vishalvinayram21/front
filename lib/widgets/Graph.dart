@@ -34,8 +34,11 @@ class _GraphingState extends State<Graphing> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        color:  Color.fromRGBO(143, 163, 253, 1),
+        borderRadius: BorderRadius.circular(40)
+      ),
       margin: EdgeInsets.fromLTRB(0, 16, 0, 20),
-      color:  Color.fromRGBO(143, 163, 253, 1),
       alignment: Alignment.topLeft,
       child: Stack(
         children:[
@@ -57,7 +60,13 @@ class _GraphingState extends State<Graphing> {
                        enableTooltip: true
                     )
                   ],
-                  plotAreaBackgroundColor: Color.fromRGBO(157, 206, 255, 0.5)
+                  plotAreaBackgroundColor: Color.fromRGBO(157, 206, 255, 0.5),
+                  primaryXAxis: NumericAxis(
+                    isVisible:false,
+                  ),
+                  primaryYAxis: NumericAxis(
+                    isVisible:false,
+                  ),
                 ))),
           Positioned(
             top:20,

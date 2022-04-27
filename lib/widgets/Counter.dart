@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:phone/widgets/Addbene.dart';
+import 'package:phone/widgets/Parentactivity.dart';
 import 'Graph.dart';
 
 class Counters extends StatelessWidget {
@@ -236,10 +238,77 @@ class Counters extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child:Image.asset('assets/images/creditcard.png',height: 40,width: 40,),
-              )
+              ),
               ],
           ),
-        )
+        ),
+        Container(
+          alignment: Alignment.topLeft,
+          margin: EdgeInsets.fromLTRB(13, 24, 0, 15),
+          child: Text("Parent Activity",style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 20,
+            fontFamily: "Poppins",
+            color: Colors.black54,
+          ),),
+        ),
+        Parentact(),
+        Container(
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    alignment: Alignment.topLeft,
+                    margin: EdgeInsets.fromLTRB(13, 24, 0, 15),
+                    child: Text("Add on benefits",style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20,
+                      fontFamily: "Poppins",
+                      color: Colors.black45,
+                    ),),
+                  ),
+                  Container(
+                    alignment: Alignment.topRight,
+                    margin: EdgeInsets.fromLTRB(13, 24, 0, 15),
+                    child: Text("See All",style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 14,
+                      fontFamily: "Poppins",
+                      color: Colors.black54,
+                    ),),
+                  ),
+
+                ],
+
+              ),
+              Row(
+                children:[
+              Circulartab(),
+                  Circulartab(),
+                  Circulartab(),
+
+
+                ]
+              )
+            ],
+          ),
+        ),
+        //CircularTab(s:Image.asset('asserts/images/exercise.png'), "Diet")
+        //CircularTab(Image.asset('asserts/images/exercise.png'), "Diet" ),
+        Row(
+          children: [
+            Circulartab(),
+            Circulartab(),
+            Circulartab(),
+
+
+          ],
+        ),
+
+
       ],
     );
   }
@@ -274,5 +343,28 @@ class Hortab extends StatelessWidget {
     );
   }
 }
+/*
+class CircularTab extends StatelessWidget {
+  final String val;
+  final Image imag;
+  CircularTab(this.imag, this.val);
 
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children:[
+      Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.circle
+        ),
+
+        child: Image.asset(
+          imag.image.toString(),
+          fit: BoxFit.fill,
+        )
+      )
+    ]
+    );
+  }
+}*/
 

@@ -201,24 +201,24 @@ class _HomeScreenState extends State<HomeScreen> {
 
 Widget menu(BuildContext context) {
   return Container(
-    child: const TabBar(
-      // labelColor: Ap,
+    child:  TabBar(// labelColor: Ap,
       unselectedLabelColor: Colors.grey,
       indicatorSize: TabBarIndicatorSize.tab,
       indicatorPadding: EdgeInsets.all(5.0),
       indicatorColor: Colors.black,
       tabs: [
         Tab(
-          text: "Home",
-          icon: Icon(Icons.home),
-        ),
-        Tab(
           text: "My health",
-          icon: Icon(Icons.pending),
+          icon:Icon(Icons.pending,color: Color.fromRGBO(155, 144, 255, 1),
+          ),
         ),
         Tab(
-          text: "Settings",
-          icon: Icon(Icons.settings),
+          text: "MyGroup",
+          icon: Icon(Icons.group,color: Color.fromRGBO(155, 144, 255, 1),)),
+
+        Tab(
+          text: "Assistance",
+          icon: Icon(Icons.doorbell,color: Color.fromRGBO(155, 144, 255, 1),),
         ),
       ],
     ),
