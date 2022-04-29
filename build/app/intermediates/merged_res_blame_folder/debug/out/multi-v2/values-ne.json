@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/linuxlite/Desktop/gro_remotcare/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml",
+            "outputFile": "/home/linuxlite/Desktop/ml/front/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "/home/linuxlite/.gradle/caches/transforms-2/files-2.1/195d721cf0c28f75574f42c4986fc2c2/browser-1.2.0/res/values-ne/values-ne.xml",
