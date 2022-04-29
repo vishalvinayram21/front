@@ -6,14 +6,7 @@ import 'package:intl/intl.dart';
 
 class Graphing extends StatefulWidget {
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
 
   @override
@@ -94,18 +87,23 @@ class _GraphingState extends State<Graphing> {
 
   List<SalesData> getChartData() {
     final List<SalesData> chartData = [
-      SalesData(5, 78),
+      SalesData(5, 95),
       SalesData(5.1, 77),
       SalesData(5.2, 79),
-      SalesData(5.3, 75),
-      SalesData(5.4, 76),
-      SalesData(5.5, 79),
-      SalesData(5.6, 75),
+      SalesData(5.3, 70),
+      SalesData(5.4, 75),
+      SalesData(5.5, 72),
+      SalesData(5.6, 95),
       SalesData(5.6, 78),
-      SalesData(5.8, 77),
+      SalesData(5.8, 83),
       SalesData(5.9, 74),
-      SalesData(6.0, 100),
-      SalesData(7.0, 120),
+      SalesData(6.0, 99),
+      SalesData(7.1, 74),
+      SalesData(7.2, 82),
+      SalesData(7.3, 76),
+      SalesData(7.4, 92),
+      SalesData(7.5, 77),
+
 
 
 

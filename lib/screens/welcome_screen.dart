@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:phone/home_screen.dart';
+import 'package:phone/screens/Selectuser.dart';
 import 'package:phone/screens/signin_screen.dart';
 
 
@@ -154,16 +156,14 @@ class Welcome extends StatelessWidget {
                             ],
                           ),
                         ),
-                         Container(
-                           decoration: BoxDecoration(
-                             shape: BoxShape.rectangle,
-                               color: Color.fromRGBO(140, 157, 255, 1),
-
-                         ),
-                           child: Positioned(
+                Positioned(
                              top: 108,
                              bottom: size.height,
                              child: Container(
+                               decoration: BoxDecoration(
+                                 shape: BoxShape.rectangle,
+                                 color: Color.fromRGBO(140, 157, 255, 1),
+                               ),
                                padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                                child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
@@ -173,7 +173,7 @@ class Welcome extends StatelessWidget {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => RegisterScreen(),
+                                          builder: (context) => SelectUser(),//Register screen
                                         ),
                                       );
                                     },
@@ -183,8 +183,6 @@ class Welcome extends StatelessWidget {
                                ),
                              ),
                            ),
-                         ),
-
                       ],
                     ),
                   ),
