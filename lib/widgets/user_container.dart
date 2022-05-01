@@ -35,10 +35,13 @@ Widget userContainer(
                 ),
               ),
               */
-              Image.asset(
-                userIcon,
-                height: height,
-                width: width,
+              Container(
+                margin: EdgeInsets.fromLTRB(0, 8, 0, 0),
+                child: Image.asset(
+                  userIcon,
+                  height: height,
+                  width: width,
+                ),
               ),
               Text(
                 '!23 bpm',

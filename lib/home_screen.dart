@@ -18,8 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.topLeft,
       child: DefaultTabController(
+        initialIndex: 1,
         length: 3,
         child: Scaffold(
           bottomNavigationBar: menu(context),
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: 242,
                     height: 40,
                     child: DropdownButton<String>(
-                      alignment: AlignmentDirectional.topStart,
+                      alignment: AlignmentDirectional.topEnd,
                       isExpanded: true,
                       underline: SizedBox(),
                       value: _value,
@@ -63,7 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             actions: [
               Container(
-                width: 25,
+                margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                width: 32,
                 height: 32,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -82,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               SizedBox(width: 10),
               Container(
-                width: 25,
+                width: 32,
                 height: 32,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -104,8 +105,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           body: TabBarView(
             children: [
-              TabHome(),
               Center(child: Text('My health')),
+              TabHome(),
               InkWell(
                   onTap: () {
                     Navigator.push(
@@ -128,7 +129,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
-                  ))
+                  )),
+
+
             ],
           ),
         ),
@@ -208,20 +211,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
 Widget menu(BuildContext context) {
   return Container(
-    child:  TabBar(// labelColor: Ap,
+    child:  const TabBar(// labelColor: Ap,
       unselectedLabelColor: Colors.grey,
       indicatorSize: TabBarIndicatorSize.tab,
       indicatorPadding: EdgeInsets.all(5.0),
       indicatorColor: Colors.black,
       tabs: [
         Tab(
+          text: "MyGroup",
+          icon: Icon(Icons.group,color: Color.fromRGBO(155, 144, 255, 1),)),
+        Tab(
           text: "My health",
           icon:Icon(Icons.pending,color: Color.fromRGBO(155, 144, 255, 1),
           ),
         ),
-        Tab(
-          text: "MyGroup",
-          icon: Icon(Icons.group,color: Color.fromRGBO(155, 144, 255, 1),)),
 
         Tab(
           text: "Assistance",

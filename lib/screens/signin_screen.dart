@@ -114,10 +114,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           alignment: Alignment.center,
                           children: [
                             Positioned(
-                              top: 70,
+                              top: 30,
                               child: Container(
                                 height: 300,
-                                width: 300,
+                                width: 284,
                                 // padding: const EdgeInsets.all(10.0),
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
@@ -127,7 +127,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             ),
                             Positioned(
                               bottom: 0,
-                              top: 100,
+                              top: 60,
                               child: SvgPicture.asset(
                                 'assets/images/logo2.svg',
                                 width: 89,
@@ -155,7 +155,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           children: [
                             SizedBox(height: 20),
                             const Padding(
-                              padding: EdgeInsets.fromLTRB(20, 17, 0, 0),
+                              padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                               child: Text(
                                 'Enter your',
                                 style: TextStyle(
@@ -181,7 +181,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     TextStyle(color: Colors.grey, fontSize: 14),
                               ),
                             ),
-                            SizedBox(height: 20),
+                            SizedBox(height: 10),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -190,7 +190,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 25.0,
                                         color: Color(0xFF989898))),
-                                const SizedBox(width: 10),
+                                const SizedBox(width: 7),
                                 // SizedBox(
                                 //   width: 100,
                                 //   child: TextField(),
@@ -202,7 +202,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ],
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                              padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                               child: NumericKeyboard(
                                 onKeyboardTap: _onKeyboardTap,
                                 textColor: Colors.black,
@@ -220,7 +220,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             Align(
                               alignment: Alignment.center,
                               child: Container(
-                                margin: EdgeInsets.only(top: 20, bottom: 5),
+                                margin: EdgeInsets.only(top: 10, bottom: 5),
                                 child: Padding(
                                   padding:
                                       EdgeInsets.symmetric(horizontal: 10.0),
@@ -259,7 +259,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 ),
                               ),
                             ),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 10),
                             const Align(
                               alignment: Alignment.center,
                               child: Text(

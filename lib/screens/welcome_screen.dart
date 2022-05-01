@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:phone/home_screen.dart';
-import 'package:phone/screens/Selectuser.dart';
+//import 'package:phone/screens/Selectuser.dart';
 import 'package:phone/screens/signin_screen.dart';
 
 
@@ -173,7 +173,7 @@ class Welcome extends StatelessWidget {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => SelectUser(),//Register screen
+                                          builder: (context) => const HomeScreen(),//Register screen
                                         ),
                                       );
                                     },

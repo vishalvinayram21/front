@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:phone/home_screen.dart';
 import 'package:phone/screens/signin_screen.dart';
 import 'package:phone/screens/welcome_screen.dart';
 
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
               primaryColor: const Color(0xFF949DFF),
               // scaffoldBackgroundColor: const Color(0xFFEFEFEF),
             ),
-            home: Welcome(),
+            home: HomeScreen(),
           );
         }
 
